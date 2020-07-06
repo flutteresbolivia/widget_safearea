@@ -5,14 +5,18 @@ class SafeaAreaPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      bottom: true, // por defecto
-      left: true, // por defecto
-      right: true, // por defecto
-      top: true, // por defecto
-      child: SizedBox.expand(
+    return Scaffold(
+      backgroundColor: Colors.green,
+      body: SafeArea(
+        bottom: true, // por defecto
+        left: true, // por defecto
+        right: true, // por defecto
+        top: true, // por defecto
         child: Container(
-          color: Colors.green,
+          child: Text(
+            "SafeArea",
+            style: TextStyle(fontSize: 40),
+          ),
         ),
       ),
     );
